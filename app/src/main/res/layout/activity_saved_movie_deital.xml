@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.taslak.moviediary.MovieDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitleS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvYearS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year: " />
+
+        <TextView
+            android:id="@+id/tvRatedS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rated: " />
+
+        <TextView
+            android:id="@+id/tvReleasedS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Released: " />
+
+        <TextView
+            android:id="@+id/tvGenreS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre: " />
+
+        <TextView
+            android:id="@+id/tvDirectorS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Director: " />
+
+        <TextView
+            android:id="@+id/tvActorsS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actors: " />
+
+        <TextView
+            android:id="@+id/tvimdbRatingS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="imdbRating: " />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/hold_to_edit"
+            android:id="@+id/tvDescription"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/cbFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/cbSeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seen"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
